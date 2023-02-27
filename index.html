@@ -14,8 +14,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-<link rel="stylesheet" href="styles.css" />
 
+  <!-- Nuevas -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+   <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+   <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cards.css" />
 
 </head>
 
@@ -48,7 +55,7 @@
 
   </header>
   <main>
-
+    
       <section class="banner" >
         <div>
           <h2>Eva Sánchez Linares</h2>
@@ -78,8 +85,86 @@
           </div>
         </div>
       </div>
-      
+      <div class="b-example-divider" id="educacion"></div>
 
+      <section class="cards">
+        
+        
+        <div class="options">
+          <div class="option active" style="--optionBackground:url(./img/cards/ic-messi-bg.jpg);">
+             <div class="shadow"></div>
+             <div class="label">
+                <div class="icon">
+                   <img src="./img/cards/ic-argentina.png" />
+                </div>
+                <div class="info">
+                   <div class="main">Messi</div>
+                   <div class="sub">Fiasco no primeiro jogo.</div>
+                </div>
+             </div>
+          </div>
+          <div class="option" style="--optionBackground:url(./img/cards/ic-messi-bg.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+               <div class="icon">
+                  <img src="./img/cards/ic-argentina.png" />
+               </div>
+               <div class="info">
+                  <div class="main">Messi</div>
+                  <div class="sub">Fiasco no primeiro jogo.</div>
+               </div>
+            </div>
+         </div>
+          <div class="option" style="--optionBackground:url(./img/cards/ic-neymar-bg.jpg);">
+             <div class="shadow"></div>
+             <div class="label">
+                <div class="icon">
+                   <img src="./img/cards/ic-brazil.png" />
+                </div>
+                <div class="info">
+                   <div class="main">Neymar</div>
+                   <div class="sub">Será que leva a copa?</div>
+                </div>
+             </div>
+          </div>
+          <div class="option" style="--optionBackground:url(./img/cards/ic-mbappe-bg.jpg);">
+             <div class="shadow"></div>
+             <div class="label">
+                <div class="icon">
+                   <img src="./img/cards/ic-franca.png" />
+                </div>
+                <div class="info">
+                   <div class="main">Mbappé</div>
+                   <div class="sub">Novo artilheiro da copa?</div>
+                </div>
+             </div>
+          </div>
+          <div class="option" style="--optionBackground:url(./img/cards/ic-cristiano-ronaldo-bg.jpg);">
+             <div class="shadow"></div>
+             <div class="label">
+                <div class="icon">
+                   <img src="./img/cards/ic-portugal.png" />
+                </div>
+                <div class="info">
+                   <div class="main">Cristiano Ronaldo</div>
+                   <div class="sub">Possivelmente a última copa</div>
+                </div>
+             </div>
+          </div>
+          <div class="option" style="--optionBackground:url(./img/cards/ic-richarlison-bg.jpg);">
+             <div class="shadow"></div>
+             <div class="label">
+                <div class="icon">
+                   <img src="./img/cards/ic-brazil.png" />
+                </div>
+                <div class="info">
+                   <div class="main">Richarlison</div>
+                   <div class="sub">Melhor gol da copa?!</div>
+                </div>
+             </div>
+          </div>
+       </div>
+      </section>
 
 
       <div class="b-example-divider" id="educacion"></div>
@@ -170,5 +255,8 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 </body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="./script.js"></script>
 
 </html>
