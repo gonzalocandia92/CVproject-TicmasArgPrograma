@@ -72,8 +72,8 @@
       <section class="css-selector banner" >
         <div>
           <h2>Eva Sánchez Linares</h2>
-          <h3>
-            Programadora Web Full Stack con más de 5 años de trayectoria desarrolladas en el eCommerce
+          <h3 class="animate-text" id="animate-text">
+            Programadora Web Full Stack con más de 5 años de trayectoria desarrolladas en el eCommerce.
           </h3>
         </div>
         <img src="img/perfil.jpg" />
@@ -215,45 +215,50 @@
 
 
 <!-- FORMULARIO DE CONTACTO -->
-      <div class="css-selector text-secondary px-4 py-1 align-items-center text-center">
-        <form method="POST" action="{% url 'enviarcontacto' %}">
-            <h1 class="display-6 fw-bold lh-1 mb-3 text-white">Contactame</h1>
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your Name">
-                        <label for="nanombreme">Nombre y Apellido</label>
+      <div class="css-selector text-secondary px-4 py-4 align-items-center text-center">
+        <div class="bg-transparent container-sm col-12 col-lg-8">
+            <form method="POST" action="#">
+                <h1 class="display-6 fw-bold mb-3 text-white">Contactame</h1>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your Name">
+                            <label for="nanombreme">Nombre y Apellido</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                            <label for="subject">Asunto</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 150px"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-light w-100 py-3" type="button">Enviar</button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-                        <label for="subject">Asunto</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 150px"></textarea>
-                        <label for="message">Mensaje</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-light w-100 py-3" type="submit">Enviar</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
       </div>
+
+<!-- SEPARADOR -->
+      <div class="b-example-divider" id="contacto"></div>
+
   </main>
-  
 
 <!-- FOOTER -->
-  <footer class="css-selector bg-dark text-center text-white">
+  <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
               ><i class="fab fa-facebook-f"></i
